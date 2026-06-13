@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preparation and Intention Setting — Healing the Helpers</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --gold: #F1DCAC; --gold-dark: #c9a96e; --grey: #434343; --black: #111111; --white: #FFFFFF; --off-white: #F9F6F0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Montserrat', sans-serif; background: var(--off-white); color: var(--black); max-width: 100%; width: 100%; margin: 0 auto; }
+  @page { margin: 0; size: 794px auto; }
+  .header { background: var(--black); padding: 6px 16px 18px; text-align: center; }
+  .header-title { font-size: 32px; font-weight: 900; color: var(--white); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .header-title span { color: var(--gold); }
+  .header-sub { font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 480px; margin: 0 auto; }
+  .divider { height: 3px; background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-dark)); }
+  .grey-bar { height: 7px; background: #434343; width: 100%; display: block; }
+  .gold-bar { background: var(--gold); padding: 14px 10px; text-align: center; }
+  .gold-bar p { font-size: 14px; font-weight: 600; color: var(--black); line-height: 1.6; }
+  .section-label { padding: 16px 10px 10px; display: flex; align-items: center; gap: 10px; }
+  .section-label span { font-size: 10px; font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; color: var(--grey); white-space: normal; }
+  .section-label-line { flex: 1; height: 1px; background: #434343; }
+  .cards { padding: 0 8px 10px; display: flex; flex-direction: column; gap: 13px; }
+  .card { background: var(--white); border-radius: 10px; border-left: 5px solid var(--gold-dark); padding: 17px 20px 15px 18px; box-shadow: 0 1px 8px rgba(0,0,0,0.07); page-break-inside: avoid; break-inside: avoid; }
+  .card-header { display: flex; align-items: flex-start; gap: 11px; margin-bottom: 9px; }
+  .card-icon { width: 36px; height: 36px; background: var(--black); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+  .card-title { font-size: 14px; font-weight: 800; color: var(--black); line-height: 1.2; letter-spacing: -0.01em; margin-bottom: 3px; }
+  .card-tag { display: inline-block; background: var(--gold); color: var(--black); font-size: 8px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; }
+  .card-body { font-size: 13px; font-weight: 400; color: var(--grey); line-height: 1.75; }
+  .card-body strong { font-weight: 700; color: var(--black); }
+  .card-note { margin-top: 9px; padding: 8px 10px 8px 13px; background: var(--off-white); border-radius: 5px; font-size: 12px; font-weight: 600; color: var(--grey); line-height: 1.6; border-left: 3px solid var(--gold-dark); }
+  .card-note strong { color: var(--black); }
+  .section-intro { padding: 0 8px 10px; font-size: 13px; font-weight: 400; color: var(--grey); line-height: 1.75; }
+  .practice-grid { padding: 0 8px 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .practice-card { background: var(--white); border-radius: 8px; padding: 14px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); border-top: 3px solid var(--gold); }
+  .practice-title { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--black); margin-bottom: 6px; }
+  .practice-body { font-size: 12px; color: var(--grey); line-height: 1.75; }
+  .practice-body strong { color: var(--black); font-weight: 700; }
+  .reminder-box { margin: 4px 8px 14px; background: #434343; border-radius: 10px; padding: 20px 22px; page-break-inside: avoid; break-inside: avoid; }
+  .reminder-title { font-size: 11px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .reminder-body { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.9); line-height: 1.75; }
+  .reminder-body strong { color: var(--gold); }
+  .dark-box-body { font-size: 13px; font-weight: 500; line-height: 1.75; }
+
+  @media screen and (max-width: 600px) {
+    body { font-size: 20px !important; }
+    .header { padding: 10px 14px 22px !important; }
+    .header-title { font-size: 28px !important; }
+    .header-sub { font-size: 16px !important; }
+    .gold-bar p { font-size: 18px !important; line-height: 1.7; }
+    .section-label { padding: 16px 8px 10px !important; }
+    .section-label span { font-size: 14px !important; }
+    .cards { padding: 0 6px 12px !important; gap: 12px !important; }
+    .card { padding: 16px !important; overflow: hidden !important; }
+    .card-header { flex-wrap: wrap !important; }
+    .card-title { font-size: 21px !important; word-break: break-word !important; }
+    .card-tag { font-size: 13px !important; padding: 3px 8px !important; }
+    .card-body { font-size: 18px !important; line-height: 1.8 !important; }
+    .card-note { font-size: 17px !important; }
+    .card-icon { width: 34px !important; height: 34px !important; font-size: 16px !important; }
+    .section-intro { font-size: 18px !important; padding: 0 6px 10px !important; }
+    .practice-grid { grid-template-columns: 1fr !important; padding: 0 6px 12px !important; }
+    .practice-title { font-size: 14px !important; }
+    .practice-body { font-size: 17px !important; }
+    .reminder-title { font-size: 15px !important; }
+    .reminder-body { font-size: 18px !important; }
+    .dark-box-body { font-size: 18px !important; }
+    img[alt="Healing the Helpers"] { width: 260px !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB9AAAAPoCAYAAACGXmWqAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAA3tklEQVR4nO3d2XbjvLGAUepf/f6vrFy0HbttDRwwVBX2vjorJ3FTHCCBn0BtGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsLD/AcV6jVrVuGSlAAAAAElFTkSuQmCC" alt="Healing the Helpers" style="width:350px;max-width:90%;height:auto;display:block;margin:0 auto 12px;">
+  <div style="width:100%;height:4px;background:#434343;margin-bottom:14px;"></div>
+  <h1 class="header-title">Preparation and<br><span>Intention Setting</span></h1>
+  <p class="header-sub">How you arrive at a session shapes everything that happens inside it</p>
+</div>
+
+<div class="divider"></div>
+<div class="gold-bar"><p>The medicine meets you where you are. <strong>Preparation is the work of choosing where that is.</strong></p></div>
+<div class="grey-bar"></div>
+
+<!-- WHY PREPARATION MATTERS -->
+<div class="section-label"><span>Why Preparation Matters</span><div class="section-label-line"></div></div>
+<div class="cards">
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">🌱</div>
+      <div><div class="card-title">Set and Setting Are Not a Suggestion</div><span class="card-tag">The Foundation</span></div>
+    </div>
+    <div class="card-body">The phrase "set and setting" was first articulated by Timothy Leary in the 1960s, but the principle behind it is far older and deeper than that. Set is the mindset, the emotional state, the beliefs, intentions, fears, and expectations you bring to the experience. Setting is the physical and relational environment in which it unfolds. Together they determine the quality and direction of the session more than any other variable, including the dose.<br><br>The same medicine, at the same dose, in the same body, can produce a profoundly healing experience or a difficult and disorienting one depending almost entirely on what the person brought to it and the environment that held them. <strong>This is not metaphor. It reflects the way the brain processes novel and intense experiences, through the lens of what it already believes and expects to be true.</strong><br><br>Preparation is the deliberate cultivation of the set. It is the work you do in the days and weeks before a session to clear the field, soften the defenses, clarify what you are bringing and what you are asking for, and arrive at the experience in the best possible internal condition for it to do its work.</div>
+    <div class="card-note">Preparation is not about controlling the experience. It is about showing up to it consciously rather than accidentally. The medicine will take you where it takes you. Preparation means you are ready to go there.</div>
+  </div>
+</div>
+
+<!-- PHYSICAL PREPARATION -->
+<div class="section-label"><span>Physical Preparation</span><div class="section-label-line"></div></div>
+<div class="section-intro">The body is the vessel for the experience. How you treat it in the days before a session shapes what it can hold and how it responds.</div>
+<div class="practice-grid">
+  <div class="practice-card">
+    <div class="practice-title">🍽️ Diet in the Days Before</div>
+    <div class="practice-body">Light, whole, easily digestible food in the 24 to 48 hours before a session reduces nausea and supports a cleaner physiological baseline. Avoid heavy, processed, or fatty food. Reduce alcohol and sugar. For ayahuasca, strict dietary guidelines, the tyramine restriction, begin 24 to 48 hours before and are medically important. For other medicines, lighter eating is supportive rather than mandatory.</div>
+  </div>
+  <div class="practice-card">
+    <div class="practice-title">🚫 Fasting Before the Session</div>
+    <div class="practice-body">Most protocols recommend fasting for 4 to 6 hours before a session, with water and electrolytes permitted. A full stomach increases nausea and can make the experience less clean. An empty stomach allows the medicine to be absorbed more efficiently and reduces the chance of vomiting during the most intense phase. Check the specific protocol for the medicine you are working with.</div>
+  </div>
+  <div class="practice-card">
+    <div class="practice-title">😴 Sleep</div>
+    <div class="practice-body">Prioritize sleep in the nights before a session. A depleted, sleep-deprived nervous system is a more anxious and reactive nervous system and will bring that baseline into the experience. The night before a session is not the time for a late night. Treat the sleep before as part of the preparation itself.</div>
+  </div>
+  <div class="practice-card">
+    <div class="practice-title">🚶 Gentle Movement</div>
+    <div class="practice-body">Light exercise, walking, yoga, or stretching in the days before a session helps regulate the nervous system, moves any accumulated tension through the body, and builds a sense of embodied presence that will serve you during the experience. Avoid intense training in the 24 hours immediately before, as the body does not need to be in recovery mode going in.</div>
+  </div>
+  <div class="practice-card">
+    <div class="practice-title">🍷 Reduce Substances</div>
+    <div class="practice-body">Alcohol and cannabis in the days before a session can dull the nervous system's sensitivity and reduce the depth and clarity of the experience. Most practitioners recommend avoiding alcohol for at least 48 hours before. This is not a moral position. It is a practical one. You are preparing a system to do subtle and important work. Depressants work against that preparation.</div>
+  </div>
+  <div class="practice-card">
+    <div class="practice-title">💊 Medications and Washout Periods</div>
+    <div class="practice-body">Some medications require washout periods before certain medicines, particularly SSRIs and SNRIs before serotonergic psychedelics, and any serotonergic medication before ayahuasca. <strong>This is a medical decision that must be made with your prescribing provider.</strong> Never stop a psychiatric medication without medical guidance. Medication safety is the clinical layer of preparation and it belongs to your healthcare team.</div>
+  </div>
+</div>
+
+<!-- MENTAL AND EMOTIONAL PREPARATION -->
+<div class="section-label"><span>Mental and Emotional Preparation</span><div class="section-label-line"></div></div>
+<div class="cards">
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">🧹</div>
+      <div><div class="card-title">Clearing the Field</div><span class="card-tag">Before You Arrive</span></div>
+    </div>
+    <div class="card-body">Mental and emotional preparation is about arriving at the session with as much clarity and as little accumulated noise as possible. This does not mean having no emotions or no fear. Fear before a session is normal and often appropriate. It means being conscious of what you are carrying and making deliberate choices about what you want to bring in and what you want to set down at the door.<br><br>In the days before a session, it helps to limit exposure to news and social media, to reduce high-conflict conversations and situations where possible, to spend time in nature or in any environment that brings you into contact with something larger and quieter than your daily concerns. Journaling about what you are hoping for, what you are afraid of, and what you most need to hear can be valuable. Not as an exercise in self-analysis but as a way of getting clear on what is actually present.<br><br><strong>You do not need to resolve or process everything before you arrive. You need to be honest about what is there.</strong> The medicine will meet it regardless. Preparation means you have named it first, which makes it easier to be with when it surfaces.</div>
+    <div class="card-note">Many people report that the most important preparation happened in the 48 hours before the session, not the weeks before. What you do with the day before matters. Protect it.</div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">🤝</div>
+      <div><div class="card-title">The Preparation Session with Your Guide</div><span class="card-tag">Relational Preparation</span></div>
+    </div>
+    <div class="card-body">A thorough preparation session with your guide is one of the most important parts of the entire healing arc. This is where the relational container gets established. Where trust is built. Where your guide learns what you are carrying and what you most need, and where you learn what to expect from the experience and from them.<br><br>A good preparation session covers your history and what brought you here, what you are hoping for and what you are afraid of, the practical elements of the session including what it will look like and feel like, any safety considerations specific to you, and the intention you are bringing. It also begins the co-regulation relationship that will hold you during the session itself.<br><br><strong>Do not skip or rush the preparation session.</strong> The quality of trust built before the session directly shapes how safe you feel to go deep during it. A person who trusts their guide completely can surrender to difficult material in ways that a person who barely knows their guide cannot.</div>
+  </div>
+</div>
+
+<!-- INTENTION SETTING -->
+<div class="section-label"><span>Intention Setting</span><div class="section-label-line"></div></div>
+
+<!-- DARK BOX -->
+<div style="margin: 4px 8px 14px; background: var(--black); border-radius: 10px; padding: 20px 22px;">
+  <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 10px;">What an Intention Is and Is Not</div>
+  <div style="font-size: 16px; font-weight: 700; color: var(--gold); line-height: 1.4; margin-bottom: 10px;">An intention is not a demand. It is a direction.</div>
+  <div class="dark-box-body" style="color: rgba(255,255,255,0.88);">An intention tells the medicine and your own deeper self what you are open to receiving, what question you are holding, what you are asking for help with. It is an offering of direction, not a contract with specific outcomes.<br><br>An expectation, by contrast, is a fixed picture of how the experience should go and what it should produce. Expectations are one of the most reliable ways to make a healing session more difficult, because the medicine almost never goes where we think it should and the gap between what we expected and what is actually happening creates resistance rather than openness.<br><br><strong style="color: var(--gold);">The most powerful intention is one that is specific enough to give direction but open enough to be surprised.</strong> "Show me what I most need to see" is more powerful than "fix my anxiety." "Help me understand my relationship with my mother" is more powerful than "help me forgive her." The first in each pair opens a door. The second predetermines what is supposed to be on the other side of it.</div>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">🎯</div>
+      <div><div class="card-title">How to Set a Good Intention</div><span class="card-tag">The Practice</span></div>
+    </div>
+    <div class="card-body">A good intention emerges from honest reflection on what is most alive in you right now. Not what you think you should be working on, not what sounds impressive or spiritually advanced, but what is actually present, what is hurting, what you are most afraid to look at, what you most deeply want to understand or release or become.<br><br>Start by asking yourself: what brought me here? What am I carrying that is heavier than it needs to be? What do I most want to feel differently about? What question, if answered, would change everything? Let the answers sit for a few days before shaping them into an intention. The ones that keep returning are the ones that matter.<br><br>Write the intention down. Say it aloud. Bring it to your preparation session and share it with your guide. <strong>Making the intention explicit and witnessed gives it weight and makes it a more active container for the experience.</strong><br><br>Then set it down. Once you have named it, you do not need to hold it tightly during the session. You have given the medicine its direction. Now you can let go of the steering wheel.</div>
+    <div class="card-note">Some of the most powerful intentions are the simplest. "I am open to healing." "Show me what I need to see." "Help me come home to myself." The medicine does not need elaborate instructions. It needs your honest permission.</div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">🙏</div>
+      <div><div class="card-title">Surrender as the Final Preparation</div><span class="card-tag">The Hardest Part</span></div>
+    </div>
+    <div class="card-body">After all the physical preparation, all the mental clearing, all the intention work, the final and most important preparation is the practice of surrender. The willingness to let the experience be what it is rather than what you planned for it to be. The willingness to go where the medicine takes you rather than where you wanted to go. The willingness to not be in control.<br><br>For helpers, this is often the hardest part. People who have spent their careers managing outcomes, assessing risks, and maintaining composure in difficult situations do not easily give up the steering wheel. The identity that has kept them safe and effective in their work is the same identity that resists the depth that healing requires.<br><br><strong>Surrender in this context does not mean passivity or the absence of agency. It means bringing your full, conscious, willing self to an experience and then trusting what arises.</strong> It means choosing, in the moment when the experience becomes bigger than you expected, to breathe into it rather than fight it. To say yes rather than no.<br><br>That choice, repeated throughout the session, is the practice of surrender. It is also, perhaps, the most important healing practice available.</div>
+    <div class="card-note">The things that most need to be healed are almost always the things the protective self most wants to avoid. Surrender is the agreement to let the medicine go there anyway. It does not require fearlessness. It requires willingness.</div>
+  </div>
+</div>
+
+<!-- FOR HELPERS -->
+<div class="section-label"><span>For Helpers Specifically</span><div class="section-label-line"></div></div>
+<div class="cards">
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">💛</div>
+      <div><div class="card-title">Preparing When You Are the One Who Usually Prepares Others</div><span class="card-tag">The Helpers Wound</span></div>
+    </div>
+    <div class="card-body">There is something particular about a helper sitting in the chair that is worth naming. You know too much to pretend you do not know anything, but you do not yet know enough to feel genuinely safe. You can tell from the outside what a good session looks like, but you have limited experience of what it feels like from the inside. You may be better at taking care of other people in hard moments than allowing someone to take care of you in one.<br><br>Your preparation may need to include an honest reckoning with the identity you are bringing into the room. The expert. The competent one. The person who handles things. <strong>That identity is an asset everywhere except in the chair, where it becomes the primary obstacle to depth.</strong><br><br>Part of your intention work might be something like: I am willing to not know what is happening. I am willing to be uncertain. I am willing to receive. I am willing to need something. These may be the most radical intentions a helper can set, because they require the temporary laying down of the very identity that has defined and protected them for years.<br><br>You do not have to do this perfectly. You just have to be willing to try.</div>
+    <div class="card-note">The cup you have poured from for so long deserves to be filled. Preparation is the beginning of that. It is the act of turning toward yourself with the same intention and care you have given to everyone else.</div>
+  </div>
+</div>
+
+<!-- DAY OF SESSION -->
+<div class="section-label"><span>The Day of the Session</span><div class="section-label-line"></div></div>
+<div class="practice-grid">
+  <div class="practice-card">
+    <div class="practice-title">🌅 Morning Practices</div>
+    <div class="practice-body">Keep the morning of the session quiet and inward. Journaling, meditation, gentle movement, or simply sitting with your intention. Avoid screens and news. Eat lightly if eating at all. Give yourself more time than you think you need so you are not arriving rushed or stressed.</div>
+  </div>
+  <div class="practice-card">
+    <div class="practice-title">👕 What to Wear and Bring</div>
+    <div class="practice-body">Comfortable, soft clothing that you can move in and that feels safe on your body. Layers, as body temperature fluctuates. Something from home that carries comfort, a soft object, a photograph, a meaningful item. An eye mask if the space uses one. Any comfort objects your guide has suggested.</div>
+  </div>
+  <div class="practice-card">
+    <div class="practice-title">📵 Devices and Logistics</div>
+    <div class="practice-body">Arrange your day so that nothing requires your attention during the session window, including the hours after. Tell the people who might contact you that you are unavailable. Turn notifications off. The freedom to be completely unreachable is itself a form of preparation. It tells your nervous system that nothing outside this room needs you right now.</div>
+  </div>
+  <div class="practice-card">
+    <div class="practice-title">🚗 Transportation</div>
+    <div class="practice-body">Arrange a safe way home before the session begins. Do not plan to drive. Have a trusted person available to transport you or arrange other options in advance. The hours after a session are not hours for logistics. They are integration time. Knowing the return home is handled removes one thing your mind does not need to hold.</div>
+  </div>
+  <div class="practice-card">
+    <div class="practice-title">🏠 Your Space Afterward</div>
+    <div class="practice-body">Prepare your home before you leave for the session. Clean sheets, nourishing food available, a comfortable and quiet space to return to. The environment you come home to is part of the integration container. Walking into chaos or a demanding environment after a session interrupts the opening before it has time to settle.</div>
+  </div>
+  <div class="practice-card">
+    <div class="practice-title">💬 What to Say to Your Guide</div>
+    <div class="practice-body">At the start of the session, your guide will often check in on how you are arriving, what is present, and what your intention is. Be honest, even if what is present is fear, doubt, or a sense that you do not know what you are doing here. The most useful thing you can bring your guide is an accurate report of where you actually are.</div>
+  </div>
+</div>
+
+<!-- CLOSING -->
+<div class="reminder-box">
+  <div class="reminder-title">✦ A Note for Helpers</div>
+  <div class="reminder-body">You have likely spent a great deal of time preparing other people for difficult experiences. You know what it looks like to help someone feel safe, seen, and ready. Now it is your turn to receive that.<br><br>Let your guide prepare you. Let yourself be held in the container someone else has built. Notice the impulse to manage the experience before it begins, to ask the clinical questions, to stay in the expert role. Notice it, and then set it down.<br><br><strong>You do not need to understand what is going to happen. You need to be willing to meet it.</strong><br><br>The preparation you have done, the physical clearing, the intention, the honesty with your guide, the practice of surrender, is enough. You are ready. Walk through the door.</div>
+</div>
+
+<!-- FOOTER — NEVER ADD ANYTHING UNDERNEATH THE HEALING THE HELPERS LINK -->
+<div style="width:100%;height:6px;background:#434343;"></div>
+<div style="text-align:center; padding:22px 10px 24px; background:#111111;"><a href="https://healingthehelpers.com" style="font-family:Montserrat,sans-serif; font-size:18px; font-weight:900; color:#F1DCAC; text-decoration:none; letter-spacing:0.15em; text-transform:uppercase;">Healing the Helpers</a></div>
+
+</body>
+</html>
