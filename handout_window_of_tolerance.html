@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Window of Tolerance, Healing the Helpers</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --gold: #F1DCAC; --gold-dark: #c9a96e; --grey: #434343; --black: #111111; --white: #FFFFFF; --off-white: #F9F6F0; --grounding: #5a7a5a; --breath: #4a6d8c; --movement: #8c5a3a; --connection: #6b4d7a; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Montserrat', sans-serif; background: var(--off-white); color: var(--black); max-width: 100%; width: 100%; margin: 0 auto; }
+  @page { margin: 0; size: 794px auto; }
+  .header { background: var(--black); padding: 6px 16px 18px; text-align: center; }
+  .header-title { font-size: 32px; font-weight: 900; color: var(--white); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .header-title span { color: var(--gold); }
+  .header-sub { font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 480px; margin: 0 auto; }
+  .divider { height: 3px; background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-dark)); }
+  .grey-bar { height: 7px; background: #434343; width: 100%; display: block; }
+  .gold-bar { background: var(--gold); padding: 14px 10px; text-align: center; }
+  .gold-bar p { font-size: 14px; font-weight: 600; color: var(--black); line-height: 1.6; }
+  .section-label { padding: 16px 10px 10px; display: flex; align-items: center; gap: 10px; }
+  .section-label span { font-size: 10px; font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; color: var(--grey); white-space: normal; }
+  .section-label-line { flex: 1; height: 1px; background: #434343; }
+  .cards { padding: 0 8px 10px; display: flex; flex-direction: column; gap: 13px; }
+  .card { background: var(--white); border-radius: 10px; border-left: 5px solid var(--gold-dark); padding: 17px 20px 15px 18px; box-shadow: 0 1px 8px rgba(0,0,0,0.07); page-break-inside: avoid; break-inside: avoid; }
+  .card-header { display: flex; align-items: flex-start; gap: 11px; margin-bottom: 9px; }
+  .card-icon { width: 36px; height: 36px; background: var(--black); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+  .card-title { font-size: 14px; font-weight: 800; color: var(--black); line-height: 1.2; letter-spacing: -0.01em; margin-bottom: 3px; }
+  .card-tag { display: inline-block; background: var(--gold); color: var(--black); font-size: 8px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; }
+  .card-body { font-size: 13px; font-weight: 400; color: var(--grey); line-height: 1.75; }
+  .card-body strong { font-weight: 700; color: var(--black); }
+  .card-note { margin-top: 9px; padding: 8px 10px 8px 13px; background: var(--off-white); border-radius: 5px; font-size: 12px; font-weight: 600; color: var(--grey); line-height: 1.6; border-left: 3px solid var(--gold-dark); }
+  .card-note strong { color: var(--black); }
+  .section-intro { padding: 0 8px 10px; font-size: 13px; font-weight: 400; color: var(--grey); line-height: 1.75; }
+  .two-col { padding: 0 8px 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .two-col-card { background: var(--white); border-radius: 10px; padding: 14px; box-shadow: 0 1px 8px rgba(0,0,0,0.07); }
+  .two-col-card.red { border-top: 4px solid #c0392b; }
+  .two-col-card.blue { border-top: 4px solid #2980b9; }
+  .two-col-card.green { border-top: 4px solid #27ae60; }
+  .tc-title { font-size: 9px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 7px; }
+  .tc-title.red { color: #c0392b; }
+  .tc-title.blue { color: #2980b9; }
+  .tc-title.green { color: #27ae60; }
+  .tc-body { font-size: 12px; color: var(--grey); line-height: 1.75; }
+  .practice-grid { padding: 0 8px 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .practice-card { background: var(--white); border-radius: 8px; padding: 14px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); border-top: 3px solid var(--gold); }
+  .practice-title { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--black); margin-bottom: 6px; }
+  .practice-body { font-size: 12px; color: var(--grey); line-height: 1.75; }
+  .practice-body strong { color: var(--black); font-weight: 700; }
+  .practice-note { margin-top: 7px; font-size: 11px; font-style: italic; color: #888; line-height: 1.6; }
+  .reminder-box { margin: 4px 8px 14px; background: #434343; border-radius: 10px; padding: 20px 22px; page-break-inside: avoid; break-inside: avoid; }
+  .reminder-title { font-size: 11px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .reminder-body { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.9); line-height: 1.75; }
+  .reminder-body strong { color: var(--gold); }
+  .dark-box-body { font-size: 13px; font-weight: 500; line-height: 1.75; }
+
+  .practice-card.grounding { border-top-color: var(--grounding); }
+  .practice-card.breath { border-top-color: var(--breath); }
+  .practice-card.movement { border-top-color: var(--movement); }
+  .practice-card.connection { border-top-color: var(--connection); }
+  .section-label.grounding span { color: var(--grounding); }
+  .section-label.grounding .section-label-line { background: var(--grounding); }
+  .section-label.breath span { color: var(--breath); }
+  .section-label.breath .section-label-line { background: var(--breath); }
+  .section-label.movement span { color: var(--movement); }
+  .section-label.movement .section-label-line { background: var(--movement); }
+  .section-label.connection span { color: var(--connection); }
+  .section-label.connection .section-label-line { background: var(--connection); }
+
+  @media screen and (max-width: 600px) {
+    body { font-size: 20px !important; }
+    .header { padding: 10px 14px 22px !important; }
+    .header-title { font-size: 28px !important; }
+    .header-sub { font-size: 16px !important; }
+    .gold-bar p { font-size: 18px !important; line-height: 1.7; }
+    .section-label { padding: 16px 8px 10px !important; }
+    .section-label span { font-size: 14px !important; }
+    .cards { padding: 0 6px 12px !important; gap: 12px !important; }
+    .card { padding: 16px !important; overflow: hidden !important; }
+    .card-header { flex-wrap: wrap !important; }
+    .card-title { font-size: 21px !important; word-break: break-word !important; }
+    .card-tag { font-size: 13px !important; padding: 3px 8px !important; }
+    .card-body { font-size: 18px !important; line-height: 1.8 !important; }
+    .card-note { font-size: 17px !important; }
+    .card-icon { width: 34px !important; height: 34px !important; font-size: 16px !important; }
+    .section-intro { font-size: 18px !important; padding: 0 6px 10px !important; }
+    .two-col { grid-template-columns: 1fr !important; padding: 0 6px 12px !important; }
+    .tc-title { font-size: 13px !important; }
+    .tc-body { font-size: 17px !important; }
+    .practice-grid { grid-template-columns: 1fr !important; padding: 0 6px 12px !important; }
+    .practice-title { font-size: 14px !important; }
+    .practice-body { font-size: 17px !important; }
+    .practice-note { font-size: 14px !important; }
+    .reminder-title { font-size: 15px !important; }
+    .reminder-body { font-size: 18px !important; }
+    .dark-box-body { font-size: 18px !important; }
+    img[alt="Healing the Helpers"] { width: 260px !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB9AAAAPoCAYAAACGXmWqAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAA3tklEQVR4nO3d2XbjvLGAUepf/f6vrFy0HbttDRwwVBX2vjorJ3FTHCCBn0BtGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsLD/AcV6jVrVuGSlAAAAAElFTkSuQmCC" alt="Healing the Helpers" style="width:350px;max-width:90%;height:auto;display:block;margin:0 auto 12px;">
+  <div style="width:100%;height:4px;background:#434343;margin-bottom:14px;"></div>
+  <h1 class="header-title">The Window of <span>Tolerance</span></h1>
+  <p class="header-sub">Understanding your nervous system's optimal zone, and the practices that widen it over time</p>
+</div>
+
+<div class="divider"></div>
+<div class="gold-bar"><p>The goal is not to never be activated. <strong>The goal is to widen the window so more of life fits inside it.</strong></p></div>
+<div class="grey-bar"></div>
+
+<div class="section-label"><span>What the Window of Tolerance Is</span><div class="section-label-line"></div></div>
+<div class="cards">
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">🪟</div>
+      <div><div class="card-title">Your Optimal Zone of Functioning</div><span class="card-tag">Dr. Dan Siegel</span></div>
+    </div>
+    <div class="card-body">The window of tolerance is a concept developed by Dr. Dan Siegel to describe the zone of nervous system activation in which a person can function most effectively. Inside this window, you can think clearly, feel your emotions without being overwhelmed by them, connect with others, and respond to challenges rather than simply react to them.<br><br>The window has a top edge and a bottom edge. When something pushes you above the top edge, you move into a state of hyperarousal, meaning too much activation, too much feeling, the system flooding or going into fight or flight. When something pushes you below the bottom edge, you move into hypoarousal, meaning too little activation, numbness, shutdown, the system going flat and disconnected.<br><br><strong>Both states are normal responses to overwhelming experience. Neither is a character flaw.</strong> They are the nervous system doing what it was designed to do when it has more input than it can integrate. The goal is not to eliminate these responses but to develop the capacity to return to the window more quickly, and over time to widen the window so that it can hold more experience without being overwhelmed.</div>
+    <div class="card-note">For helpers, the window of tolerance is often narrowed by years of sustained stress, secondary trauma, and the habitual suppression of their own emotional responses in service of others. The window did not narrow overnight, and it does not widen overnight. Consistent practice is what changes it.</div>
+  </div>
+</div>
+
+<div class="section-label"><span>Above and Below the Window</span><div class="section-label-line"></div></div>
+<div class="section-intro">Recognizing which state you are in is the first step toward returning to the window. Both states look and feel different, and they require different responses.</div>
+
+<div class="two-col">
+  <div class="two-col-card red">
+    <div class="tc-title red">⬆ Hyperarousal</div>
+    <div class="tc-body">Too much activation. The system is flooded.<br><br>Racing heart, rapid breathing, feeling unsafe or panicked. Intrusive thoughts or images that will not stop. Rage, emotional flooding, the inability to think clearly. Feeling out of control. The urge to fight, flee, or freeze in alarm.<br><br>The nervous system has exceeded its capacity to integrate what is happening and has gone into emergency mode.</div>
+  </div>
+  <div class="two-col-card blue">
+    <div class="tc-title blue">⬇ Hypoarousal</div>
+    <div class="tc-body">Too little activation. The system has shut down.<br><br>Numbness, flatness, disconnection from feeling. Difficulty thinking or speaking. Feeling checked out, foggy, or not fully present. The sense of watching yourself from the outside. Extreme fatigue that does not resolve with rest.<br><br>The nervous system has gone into a conservation mode, shutting down non-essential functions to manage overwhelm it cannot fight or flee from.</div>
+  </div>
+  <div class="two-col-card green" style="grid-column: 1 / -1;">
+    <div class="tc-title green">✓ Inside the Window</div>
+    <div class="tc-body">Regulated. Present. Able to think and feel at the same time.<br><br>You can feel your emotions without being consumed by them. You can think clearly under pressure. You can be in connection with others. You can tolerate discomfort without it becoming overwhelming. You have access to your full range of response rather than just your most automatic ones.<br><br>This is not the absence of feeling or challenge. It is the capacity to meet both without losing yourself in the process.</div>
+  </div>
+</div>
+
+<div class="section-label"><span>How Trauma Narrows the Window</span><div class="section-label-line"></div></div>
+<div class="cards">
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">📉</div>
+      <div><div class="card-title">The Window Gets Smaller Over Time</div><span class="card-tag">The Mechanism</span></div>
+    </div>
+    <div class="card-body">Trauma, sustained stress, and chronic suppression of emotional experience all have one thing in common, they narrow the window. When the nervous system repeatedly encounters more than it can integrate, it recalibrates its thresholds. What used to be manageable now triggers flood. What used to feel tolerable now produces shutdown.<br><br>For helpers, this narrowing often happens gradually and invisibly. Years of absorbing others' pain, staying regulated for the sake of those they serve, and carrying their own unprocessed experiences slowly erode the edges of the window. <strong>What looks like compassion fatigue or burnout from the outside is often, at the neurological level, a window that has become so narrow that ordinary daily experience is now enough to push the system out of it.</strong><br><br>The narrowing is not permanent. The nervous system is plastic, which means it changes in response to experience. Just as accumulated stress narrowed the window, accumulated practices of regulation and processing can widen it. This is slow work. It happens in repetitions, not breakthroughs. But it is real and it is possible at any age.</div>
+    <div class="card-note">A narrowed window is not a weakness. It is the evidence of everything the nervous system has been asked to carry. The practices that widen it are not about becoming someone different. They are about creating conditions in which the system can finally exhale.</div>
+  </div>
+</div>
+
+<div style="margin: 4px 8px 14px; background: var(--black); border-radius: 10px; padding: 20px 22px;">
+  <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 10px;">Widening the Window</div>
+  <div style="font-size: 16px; font-weight: 700; color: var(--gold); line-height: 1.4; margin-bottom: 10px;">Two paths, working together.</div>
+  <div class="dark-box-body" style="color: rgba(255,255,255,0.88);">The window widens through two complementary paths that must both be engaged for lasting change.<br><br>The first path is <strong style="color: var(--gold);">bottom-up</strong>, working through the body. Breath practices, movement, somatic experiencing, grounding, and any practice that directly regulates the nervous system through the body rather than through the thinking mind. These practices work at the level where the window actually lives.<br><br>The second path is <strong style="color: var(--gold);">top-down</strong>, working through the mind. Processing the experiences that originally narrowed the window, through therapy, journaling, integration, talking, and making meaning. This addresses the content that the window has been containing.<br><br>Bottom-up practices expand the container. Top-down practices reduce what needs to be contained. Both matter. Neither alone is sufficient.</div>
+</div>
+
+<div class="section-label"><span>Tools for Widening Your Window</span><div class="section-label-line"></div></div>
+<div class="section-intro">Every one of the following practices works directly with your autonomic nervous system. Over time and with consistency, they train your system toward a wider, more resilient window. You do not need to do all of them. Pick two or three and do them regularly. Regularity matters more than intensity.</div>
+
+<div class="section-label grounding"><span>Grounding — Anchor Yourself in the Present</span><div class="section-label-line"></div></div>
+<div class="practice-grid">
+  <div class="practice-card grounding">
+    <div class="practice-title">5-4-3-2-1 Sensory Grounding</div>
+    <div class="practice-body">Name <strong>5 things you can see</strong>, 4 you can touch, 3 you can hear, 2 you can smell, 1 you can taste. This brings the brain back to the present moment and interrupts the threat response.</div>
+    <div class="practice-note">Use anytime you feel flooded or disconnected. Works in seconds.</div>
+  </div>
+  <div class="practice-card grounding">
+    <div class="practice-title">Feet on the Floor</div>
+    <div class="practice-body">Press both feet firmly into the ground. Feel the pressure, the temperature, the texture. Say out loud, <strong>"I am here. I am safe. This is now."</strong> Repeat slowly three times.</div>
+    <div class="practice-note">Especially useful when dissociation or panic begins to rise.</div>
+  </div>
+  <div class="practice-card grounding">
+    <div class="practice-title">Cold Water Reset</div>
+    <div class="practice-body">Splash cold water on your face or hold ice to your wrists for 30 seconds. This activates the dive reflex and rapidly slows the heart rate, <strong>signaling safety to the nervous system.</strong></div>
+    <div class="practice-note">One of the fastest physiological interventions available to you.</div>
+  </div>
+  <div class="practice-card grounding">
+    <div class="practice-title">Name It to Tame It</div>
+    <div class="practice-body">Identify and name the sensation or emotion you are experiencing without judging it. <strong>"I notice tightness in my chest. I notice this is anxiety."</strong> Labeling activates the prefrontal cortex and reduces amygdala reactivity.</div>
+    <div class="practice-note">Based on Dr. Dan Siegel's research on affect labeling.</div>
+  </div>
+</div>
+
+<div class="section-label breath"><span>Breath — Your Built-In Regulator</span><div class="section-label-line"></div></div>
+<div class="practice-grid">
+  <div class="practice-card breath">
+    <div class="practice-title">Physiological Sigh</div>
+    <div class="practice-body">Double inhale through the nose (two quick sniffs), then one long slow exhale through the mouth. <strong>This is the fastest known way to reduce physiological stress.</strong> One to three repetitions is enough.</div>
+    <div class="practice-note">Researched at Stanford. More effective than box breathing for acute anxiety.</div>
+  </div>
+  <div class="practice-card breath">
+    <div class="practice-title">Extended Exhale Breathing</div>
+    <div class="practice-body">Inhale for 4 counts, exhale for 6 to 8 counts. The extended exhale <strong>activates the parasympathetic nervous system through the vagus nerve.</strong> Do this for 2 to 5 minutes.</div>
+    <div class="practice-note">For daily maintenance, not just crisis moments. Most effective when practiced consistently.</div>
+  </div>
+  <div class="practice-card breath" style="grid-column: 1 / -1;">
+    <div class="practice-title">Cyclic Breathing for Hypoarousal</div>
+    <div class="practice-body">If you feel numb, flat, or shut down, you may need to move UP into your window, not down. Try rhythmic breathing with a slightly faster pace, inhale for 3 counts, exhale for 3 counts, combined with gentle movement like rocking or tapping your legs alternately. <strong>Activation is sometimes the doorway back to regulation.</strong></div>
+    <div class="practice-note">Hypoarousal requires a different approach than hyperarousal. If slow breathing feels worse, try this instead.</div>
+  </div>
+</div>
+
+<div class="section-label movement"><span>Movement — Your Body's Native Language</span><div class="section-label-line"></div></div>
+<div class="practice-grid">
+  <div class="practice-card movement">
+    <div class="practice-title">Bilateral Stimulation</div>
+    <div class="practice-body">Tap alternately on your left and right knees, shoulders, or cross your arms and tap your upper arms in a butterfly hug pattern. <strong>Alternating left-right stimulation activates both brain hemispheres</strong> and is calming to the nervous system.</div>
+    <div class="practice-note">Used in EMDR. Can be done quietly anywhere.</div>
+  </div>
+  <div class="practice-card movement">
+    <div class="practice-title">Shaking and Trembling</div>
+    <div class="practice-body">Stand and gently shake your hands, arms, legs, and whole body for 1 to 2 minutes. Animals discharge stress through shaking after a threat passes. <strong>We are meant to do this too.</strong> It literally releases stored tension from the tissues.</div>
+    <div class="practice-note">Feels silly. Works anyway. TRE (Trauma Release Exercises) is based on this.</div>
+  </div>
+  <div class="practice-card movement">
+    <div class="practice-title">Walking — Bilateral and Rhythmic</div>
+    <div class="practice-body">Rhythmic bilateral movement like walking, especially in nature, is one of the most consistent nervous system regulators. Even <strong>10 minutes of deliberate walking with attention to the alternating movement of your feet</strong> shifts the system.</div>
+    <div class="practice-note">Natural settings amplify the effect significantly.</div>
+  </div>
+  <div class="practice-card movement">
+    <div class="practice-title">Cold Exposure</div>
+    <div class="practice-body">End showers with 30 to 60 seconds of cold water. Over time this trains vagal tone, <strong>the flexibility of the nervous system to move between states.</strong> Start with as little as 10 seconds and build gradually.</div>
+    <div class="practice-note">Consistent practice over weeks is what builds the capacity. Occasional use provides acute relief only.</div>
+  </div>
+</div>
+
+<div class="section-label connection"><span>Connection — Co-Regulation and Safety</span><div class="section-label-line"></div></div>
+<div class="practice-grid">
+  <div class="practice-card connection">
+    <div class="practice-title">Co-Regulation With a Safe Person</div>
+    <div class="practice-body">Your nervous system does not fully regulate alone. We are wired for co-regulation. <strong>Spending time near a calm, safe person literally brings your own system toward regulation.</strong> This is not a sign of weakness. It is biology.</div>
+    <div class="practice-note">This is why the therapeutic relationship is itself a healing tool.</div>
+  </div>
+  <div class="practice-card connection">
+    <div class="practice-title">Safe Place Visualization</div>
+    <div class="practice-body">Spend 3 to 5 minutes in a place that feels completely safe, real or imagined. Use all five senses in your imagination. <strong>The nervous system responds to imagined safety almost as powerfully as real safety.</strong></div>
+    <div class="practice-note">A foundation practice in EMDR and somatic therapies. Build this resource before you need it.</div>
+  </div>
+  <div class="practice-card connection">
+    <div class="practice-title">Humming or Singing</div>
+    <div class="practice-body">Hum, sing, or chant for several minutes. <strong>Vibration of the vagus nerve through the throat is a direct activator of the parasympathetic system.</strong> Even humming a simple sound works.</div>
+    <div class="practice-note">One of the simplest and most underused tools available.</div>
+  </div>
+  <div class="practice-card connection">
+    <div class="practice-title">Eye Movements and Orienting</div>
+    <div class="practice-body">Slowly move your eyes from side to side, or look around the room and name what you see. This orienting response <strong>signals to the brainstem that no threat is present.</strong> It communicates that you have looked and you are safe.</div>
+    <div class="practice-note">A foundational practice in the Safe and Sound Protocol and somatic therapies.</div>
+  </div>
+</div>
+
+<div class="section-label"><span>Building Capacity Over Time</span><div class="section-label-line"></div></div>
+<div class="cards">
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">📅</div>
+      <div><div class="card-title">This Is a Long Game</div><span class="card-tag">Consistency Over Intensity</span></div>
+    </div>
+    <div class="card-body">A single practice session does not widen the window. What widens it is the accumulation of small consistent practices, plus the deeper work of processing what originally narrowed it. Think of it like building a muscle. Each repetition does not transform you. Thousands of repetitions over weeks and months build something real and lasting.<br><br><strong>Daily Practice (5 to 10 minutes).</strong> Choose one or two tools and do them every day at the same time. Morning is ideal, you set the tone for your nervous system before the day begins.<br><br><strong>In-the-Moment Use.</strong> When you feel yourself moving out of your window, use grounding and breath tools to return. This is not failure. It is training. Every return expands the window.<br><br><strong>After Sessions.</strong> The integration window following a medicine session or deep somatic work is precious. Use these tools in the days that follow to help your nervous system consolidate new patterns.<br><br><strong>Track What Works.</strong> Your window is unique. Some tools will resonate immediately. Some will feel strange or ineffective at first. Keep notes. Bring what you notice to your sessions.</div>
+    <div class="card-note">Your window may have taken years to narrow. It will take time to widen. That is not a problem with you or with the process. It is simply how nervous systems work. Keep going.</div>
+  </div>
+</div>
+
+<div class="reminder-box">
+  <div class="reminder-title">✦ A Note for Helpers</div>
+  <div class="reminder-body">You have likely been trained to suppress your nervous system responses in service of others. Hypoarousal may feel normal to you because shutdown has become your baseline. If that sounds familiar, start by noticing. You do not have to fix it today. You just have to begin telling the truth about where you actually are.<br><br>The practices in this handout are not extras. For someone who has spent years running on a narrowed window, they are the primary work. Your window narrowed in service of others. <strong>Widening it is also an act of service, because everything you give comes from inside that window, and the wider it is, the more there is to give.</strong></div>
+</div>
+
+<!-- FOOTER, NEVER ADD ANYTHING UNDERNEATH THE HEALING THE HELPERS LINK -->
+<div style="width:100%;height:6px;background:#434343;"></div>
+<div style="text-align:center; padding:22px 10px 24px; background:#111111;"><a href="https://healingthehelpers.com" style="font-family:Montserrat,sans-serif; font-size:18px; font-weight:900; color:#F1DCAC; text-decoration:none; letter-spacing:0.15em; text-transform:uppercase;">Healing the Helpers</a></div>
+
+</body>
+</html>
