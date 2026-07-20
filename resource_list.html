@@ -21,14 +21,14 @@
   .header-sub { font-size:12px; font-weight:400; color:rgba(255,255,255,0.55); line-height:1.7; max-width:460px; margin:0 auto; }
   .divider { height:3px; background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-dark)); }
   .grey-bar { height:6px; background:#434343; }
-  .gold-bar { background:var(--gold); padding:13px 10px; text-align:center; font-size:13px; font-weight:600; color:var(--black); line-height:1.6; }
+  .gold-bar { background:var(--gold); padding:13px 10px; text-align:center; font-size:15px; font-weight:600; color:var(--black); line-height:1.6; }
 
   /* SECTION */
   .section { margin:0 0 4px; }
   .section-header {
     background:linear-gradient(90deg, #1a1a1a, #434343);
     color:var(--white);
-    font-size:9px; font-weight:800; letter-spacing:0.3em; text-transform:uppercase;
+    font-size:11px; font-weight:800; letter-spacing:0.25em; text-transform:uppercase;
     padding:11px 16px; display:flex; align-items:center; gap:10px;
   }
   .section-header::after { content:''; flex:1; height:1px; background:rgba(241,220,172,0.25); }
@@ -39,22 +39,22 @@
   /* FILM ITEMS */
   .film-grid { display:flex; flex-direction:column; gap:6px; }
   .film-item {
-    background:var(--card-bg); border-radius:8px; padding:10px 12px;
+    background:var(--card-bg); border-radius:8px; padding:12px 14px;
     border-left:3px solid var(--grey);
     box-shadow:0 1px 4px rgba(0,0,0,0.08);
-    font-size:11px; font-weight:600; color:var(--grey); line-height:1.5;
+    font-size:15px; font-weight:600; color:var(--grey); line-height:1.65;
   }
   .film-num { color:var(--gold-dark); font-weight:800; margin-right:4px; }
 
   /* BOOK / ARTICLE ITEMS */
   .list-card {
-    background:var(--card-bg); border-radius:10px; padding:12px 14px;
+    background:var(--card-bg); border-radius:10px; padding:14px 16px;
     margin-bottom:8px; box-shadow:0 1px 6px rgba(0,0,0,0.07);
     border-top:2px solid var(--grey);
-    font-size:11px; color:var(--grey); line-height:1.7;
+    font-size:15px; color:var(--grey); line-height:1.75;
   }
-  .list-card .title { font-weight:800; color:var(--black); font-size:12px; }
-  .list-card .num { color:var(--gold-dark); font-weight:800; margin-right:4px; }
+  .list-card .title { font-weight:800; color:var(--black); font-size:17px; }
+  .list-card .num { color:var(--gold-dark); font-weight:800; font-size:15px; margin-right:4px; }
 
   /* PODCAST CARDS */
   .pod-card {
@@ -65,18 +65,18 @@
     border:1px solid rgba(67,67,67,0.2); border-top:2px solid var(--grey);
   }
   .pod-img { width:72px; height:72px; border-radius:10px; flex-shrink:0; object-fit:cover; box-shadow:0 2px 6px rgba(0,0,0,0.15); }
-  .pod-name { font-weight:800; color:var(--black); font-size:13px; margin-bottom:3px; }
-  .pod-detail { color:var(--grey); font-size:10px; line-height:1.6; }
+  .pod-name { font-weight:800; color:var(--black); font-size:16px; margin-bottom:5px; }
+  .pod-detail { color:var(--grey); font-size:14px; line-height:1.65; }
 
   /* PRACTICE ITEMS */
   .practice-grid { display:flex; flex-direction:column; gap:6px; }
   .practice-item {
-    background:var(--card-bg); border-radius:8px; padding:10px 12px;
+    background:var(--card-bg); border-radius:8px; padding:12px 14px;
     box-shadow:0 1px 4px rgba(0,0,0,0.08);
     border-bottom:3px solid var(--grey);
-    font-size:11px; color:var(--grey); line-height:1.5;
+    font-size:15px; color:var(--grey); line-height:1.65;
   }
-  .practice-item .title { font-weight:800; color:var(--black); font-size:11px; display:block; margin-bottom:2px; }
+  .practice-item .title { font-weight:800; color:var(--black); font-size:16px; display:block; margin-bottom:4px; }
 
   /* RESOURCE CARDS */
   .resource-card {
@@ -85,13 +85,13 @@
     border-left:4px solid var(--grey);
     border-bottom:1px solid #e0dbd4;
   }
-  .resource-name { font-weight:800; color:var(--black); font-size:13px; margin-bottom:4px; }
-  .resource-detail { color:var(--grey); font-size:11px; line-height:1.65; margin-bottom:2px; }
+  .resource-name { font-weight:800; color:var(--black); font-size:17px; margin-bottom:6px; }
+  .resource-detail { color:var(--grey); font-size:15px; line-height:1.75; margin-bottom:4px; }
 
   /* SUBSECTION */
   .subsection {
     font-size:8px; font-weight:800; letter-spacing:0.25em; text-transform:uppercase;
-    font-size:10px; color:var(--white); margin:14px 0 8px; padding:7px 12px 6px;
+    font-size:12px; color:var(--white); margin:14px 0 8px; padding:8px 12px 7px;
     background:#434343; border-left:3px solid var(--gold-dark); border-radius:3px;
   }
 
@@ -102,8 +102,8 @@
     padding:14px 16px; margin-bottom:8px;
     box-shadow:0 1px 4px rgba(0,0,0,0.05);
   }
-  .coming-soon .label { font-size:11px; font-weight:800; color:var(--gold-dark); letter-spacing:0.15em; text-transform:uppercase; margin-bottom:6px; }
-  .coming-soon .text { font-size:13px; color:#666; line-height:1.75; font-style:italic; }
+  .coming-soon .label { font-size:12px; font-weight:800; color:var(--gold-dark); letter-spacing:0.15em; text-transform:uppercase; margin-bottom:6px; }
+  .coming-soon .text { font-size:15px; color:#666; line-height:1.75; font-style:italic; }
 
 
   .disclaimer-box {
@@ -112,18 +112,41 @@
     border-top:3px solid var(--gold-dark);
   }
   .disclaimer-title {
-    font-size:11px; font-weight:800; letter-spacing:0.25em; text-transform:uppercase;
-    color:var(--gold); margin-bottom:10px;
+    font-size:13px; font-weight:800; letter-spacing:0.25em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:12px;
   }
   .disclaimer-text {
-    font-size:13px; font-weight:400; color:rgba(255,255,255,0.8); line-height:1.8;
+    font-size:15px; font-weight:400; color:rgba(255,255,255,0.8); line-height:1.8;
   }
   .disclaimer-text strong { color:var(--gold); font-weight:700; }
 
   a { color:var(--gold-dark); text-decoration:none; font-weight:600; }
 
   @media screen and (max-width:600px) {
-    body { font-size:20px !important; }
+    body { font-size:18px !important; }
+    .header-title { font-size:28px !important; }
+    .gold-bar { font-size:18px !important; padding:16px !important; }
+    .section-header { font-size:14px !important; letter-spacing:0.15em; padding:14px 16px !important; }
+    .film-item { font-size:18px !important; padding:14px !important; }
+    .film-item span[style] { font-size:16px !important; }
+    .list-card { font-size:18px !important; padding:16px !important; }
+    .list-card .title { font-size:20px !important; }
+    .list-card span[style] { font-size:16px !important; }
+    .pod-name { font-size:20px !important; }
+    .pod-detail { font-size:16px !important; }
+    .pod-img { width:80px !important; height:80px !important; }
+    .resource-name { font-size:20px !important; }
+    .resource-detail { font-size:17px !important; }
+    .subsection { font-size:14px !important; padding:10px 14px !important; }
+    .practice-item { font-size:18px !important; padding:14px !important; }
+    .practice-item .title { font-size:20px !important; }
+    .coming-soon .label { font-size:14px !important; }
+    .coming-soon .text { font-size:18px !important; }
+    .disclaimer-title { font-size:15px !important; }
+    .disclaimer-text { font-size:17px !important; }
+    .film-grid { grid-template-columns:1fr !important; }
+    .practice-grid { grid-template-columns:1fr !important; }
+  }
     .header-title { font-size:26px !important; }
     .header-sub { font-size:16px !important; }
     .gold-bar { font-size:18px !important; }
@@ -158,6 +181,7 @@
 </div>
 <div class="divider"></div>
 <div class="gold-bar">A Map for the Journey Ahead</div>
+<div style="background:#F9F6F0;text-align:center;padding:14px 20px;font-family:Montserrat,sans-serif;font-size:15px;font-style:italic;color:#434343;line-height:1.7;">Every resource here was chosen with intention. <strong>Let curiosity lead. Let the medicine teach.</strong></div>
 <div class="grey-bar"></div>
 
 <!-- FILMS -->
@@ -166,49 +190,49 @@
   <div class="section-body">
     <div class="film-grid">
       <div class="film-item" style="border-left-color:#c9a96e;"><span class="film-num">1.</span>An Act of Service
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">a New York Times Op-Doc short film following Rob, a fire captain, through ketamine-assisted psychotherapy for PTSD, challenging the stigma around mental health treatment in the conservative culture of the fire service · essential viewing for anyone working with first responders · free on YouTube</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">A New York Times Op-Doc short film following Rob, a fire captain, through ketamine-assisted psychotherapy for PTSD, challenging the stigma around mental health treatment in the conservative culture of the fire service · essential viewing for anyone working with first responders · free on YouTube</span></div>
       <div class="film-item" style="border-left-color:#c9a96e;"><span class="film-num">2.</span>Lighter: A Ketamine Experience
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">one-hour documentary following three people through ketamine therapy for depression, anxiety, trauma, and addiction, including a Navy veteran who healed from PTSD and suicidality after conventional treatment failed</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">One-hour documentary following three people through ketamine therapy for depression, anxiety, trauma, and addiction, including a Navy veteran who healed from PTSD and suicidality after conventional treatment failed</span></div>
       <div class="film-item"><span class="film-num">3.</span>Have a Good Trip: Adventures in Psychedelics
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">celebrities share their most memorable psychedelic experiences</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Celebrities share their most memorable psychedelic experiences</span></div>
       <div class="film-item"><span class="film-num">4.</span>A Table of Our Own
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">women in the psychedelic space share their stories of healing, leadership, and reclaiming their voices in a male-dominated field</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Women in the psychedelic space share their stories of healing, leadership, and reclaiming their voices in a male-dominated field</span></div>
       <div class="film-item"><span class="film-num">5.</span>Aya
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">female-centered documentary following women through ayahuasca ceremonies and the healing that unfolds</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Female-centered documentary following women through ayahuasca ceremonies and the healing that unfolds</span></div>
       <div class="film-item"><span class="film-num">6.</span>Fantastic Fungi
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">Paul Stamets and others explore the intelligence of mushrooms, their role in ecosystems, and their profound healing potential</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Paul Stamets and others explore the intelligence of mushrooms, their role in ecosystems, and their profound healing potential</span></div>
       <div class="film-item"><span class="film-num">7.</span>Aaron Rodgers: Enigma
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">3-part docuseries following the NFL quarterback through ayahuasca, plant medicine, and a profound spiritual transformation</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">3-part docuseries following the NFL quarterback through ayahuasca, plant medicine, and a profound spiritual transformation</span></div>
       <div class="film-item"><span class="film-num">8.</span>The Sunshine Makers
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">the wild, true story of the two men who produced the majority of the world's LSD in the 1960s and believed they were saving humanity</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">The wild, true story of the two men who produced the majority of the world's LSD in the 1960s and believed they were saving humanity</span></div>
       <div class="film-item"><span class="film-num">9.</span>Bad Trip Advice
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">practical, compassionate guidance on navigating difficult psychedelic experiences, essential viewing for anyone supporting others</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Practical, compassionate guidance on navigating difficult psychedelic experiences, essential viewing for anyone supporting others</span></div>
       <div class="film-item"><span class="film-num">10.</span>The Twelve
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">intimate portrait of twelve people through transformative psychedelic experiences and the integration that follows</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Intimate portrait of twelve people through transformative psychedelic experiences and the integration that follows</span></div>
       <div class="film-item"><span class="film-num">11.</span>Dreamshadow
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">documentary exploring ibogaine treatment for addiction, following veterans and others through one of the most powerful healing experiences available</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Documentary exploring ibogaine treatment for addiction, following veterans and others through one of the most powerful healing experiences available</span></div>
       <div class="film-item"><span class="film-num">12.</span>Dosed
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">one woman's journey using psilocybin mushrooms to heal from opioid addiction when nothing else worked, raw and honest</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">One woman's journey using psilocybin mushrooms to heal from opioid addiction when nothing else worked, raw and honest</span></div>
       <div class="film-item"><span class="film-num">13.</span>Ayahuasca Diaries
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">personal accounts from people who traveled to the Amazon for ayahuasca ceremonies and what they brought home</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Personal accounts from people who traveled to the Amazon for ayahuasca ceremonies and what they brought home</span></div>
       <div class="film-item"><span class="film-num">14.</span>From Shock to Awe
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">two combat veterans with severe PTSD turn to plant medicine when conventional treatment fails them, deeply moving</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Two combat veterans with severe PTSD turn to plant medicine when conventional treatment fails them, deeply moving</span></div>
       <div class="film-item"><span class="film-num">15.</span>Joe Dispenza: Source
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">follows participants through Dispenza's advanced workshops, capturing the neuroscience of meditation and the spontaneous healings that occur</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Follows participants through Dispenza's advanced workshops, capturing the neuroscience of meditation and the spontaneous healings that occur</span></div>
       <div class="film-item"><span class="film-num">16.</span>Bufo Alvarius: The Underground Secret
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">the most powerful documentary on 5-MeO-DMT, the medicine secreted by the Sonoran Desert toad, featuring Stanislav Grof and shaman Octavio Rettig alongside stunning animations inspired by the medicine itself, an intense meditation on consciousness and being</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">The most powerful documentary on 5-MeO-DMT, the medicine secreted by the Sonoran Desert toad, featuring Stanislav Grof and shaman Octavio Rettig alongside stunning animations inspired by the medicine itself, an intense meditation on consciousness and being</span></div>
       <div class="film-item"><span class="film-num">17.</span>How to Change Your Mind
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">Michael Pollan's book adapted as a 4-part docuseries, one episode each on LSD, psilocybin, MDMA, and mescaline including San Pedro, Wachuma, and peyote</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Michael Pollan's book adapted as a 4-part docuseries, one episode each on LSD, psilocybin, MDMA, and mescaline including San Pedro, Wachuma, and peyote</span></div>
       <div class="film-item"><span class="film-num">18.</span>Hamilton's Pharmacopeia
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">3 seasons going deep into psychedelic compounds and subcultures worldwide</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">3 seasons going deep into psychedelic compounds and subcultures worldwide</span></div>
       <div class="film-item"><span class="film-num">19.</span>Aware: Glimpses of Consciousness
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">science and philosophy of consciousness, quiet and profound</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Science and philosophy of consciousness, quiet and profound</span></div>
       <div class="film-item"><span class="film-num">20.</span>Journeys to the Edge of Consciousness
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">animated documentary following Timothy Leary, Aldous Huxley, and Alan Watts through their first psychedelic experiences</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Animated documentary following Timothy Leary, Aldous Huxley, and Alan Watts through their first psychedelic experiences</span></div>
       <div class="film-item"><span class="film-num">21.</span>Dirty Pictures
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">portrait of Alexander Shulgin, the chemist who first introduced MDMA to psychotherapists and synthesized over 200 psychedelic compounds</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Portrait of Alexander Shulgin, the chemist who first introduced MDMA to psychotherapists and synthesized over 200 psychedelic compounds</span></div>
       <div class="film-item" style="grid-column:1/-1"><span class="film-num">▶</span>Psychedelics: Lifting the Veil
-        <span style="font-weight:400;color:#666;font-size:10px;display:block;margin-top:3px;">Robin Carhart-Harris TEDx Talk · 680K+ views · foundational overview of the neuroscience and research behind psychedelic therapy</span></div>
+        <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Robin Carhart-Harris TEDx Talk · 680K+ views · foundational overview of the neuroscience and research behind psychedelic therapy</span></div>
     </div>
   </div>
 </div>
@@ -218,25 +242,25 @@
   <div class="section-header">Books · Psychedelics & Consciousness</div>
   <div class="section-body">
     <div class="list-card"><span class="num">1.</span><span class="title">The Ketamine Breakthrough</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Dr. Mike Dow and Ronan Levy · the most accessible guide to ketamine-assisted psychotherapy for both clients and therapists, written as the go-to manual for KAP, includes a session-by-session workbook · described as the most important breakthrough in mental health since Prozac</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Dr. Mike Dow and Ronan Levy · the most accessible guide to ketamine-assisted psychotherapy for both clients and therapists, written as the go-to manual for KAP, includes a session-by-session workbook · described as the most important breakthrough in mental health since Prozac</span></div>
     <div class="list-card"><span class="num">2.</span><span class="title">How to Change Your Mind</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Michael Pollan · the book that brought psychedelic science to mainstream conversation, blending personal experience with rigorous research</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Michael Pollan · the book that brought psychedelic science to mainstream conversation, blending personal experience with rigorous research</span></div>
     <div class="list-card"><span class="num">3.</span><span class="title">The Doors of Perception</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Aldous Huxley · the 1954 classic account of Huxley's mescaline experience that changed how the Western world thought about consciousness</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Aldous Huxley · the 1954 classic account of Huxley's mescaline experience that changed how the Western world thought about consciousness</span></div>
     <div class="list-card"><span class="num">4.</span><span class="title">Healing Psychedelics</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Micah Stover · innovative therapies for trauma and transformation, written for practitioners and the people who work with them</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Micah Stover · innovative therapies for trauma and transformation, written for practitioners and the people who work with them</span></div>
     <div class="list-card"><span class="num">5.</span><span class="title">Psychedelic Therapy</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Will Van Derveer, MD and Keith Kurlander, MA, LPC · a comprehensive clinical guide to restoring mental health and reclaiming your life through psychedelic-assisted approaches</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Will Van Derveer, MD and Keith Kurlander, MA, LPC · a comprehensive clinical guide to restoring mental health and reclaiming your life through psychedelic-assisted approaches</span></div>
     <div class="list-card"><span class="num">6.</span><span class="title">This Is Your Mind on Plants</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Michael Pollan · shorter and more accessible than How to Change Your Mind, focused on opium, caffeine, and mescaline</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Michael Pollan · shorter and more accessible than How to Change Your Mind, focused on opium, caffeine, and mescaline</span></div>
     <div class="list-card"><span class="num">7.</span><span class="title">The Psychedelic Experience</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Timothy Leary, Ralph Metzner, and Richard Alpert · the original 1964 guide based on the Tibetan Book of the Dead · foundational and still essential</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Timothy Leary, Ralph Metzner, and Richard Alpert · the original 1964 guide based on the Tibetan Book of the Dead · foundational and still essential</span></div>
     <div class="list-card"><span class="num">8.</span><span class="title">DMT: The Spirit Molecule</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Rick Strassman, MD · the research behind endogenous DMT and what it reveals about consciousness</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Rick Strassman, MD · the research behind endogenous DMT and what it reveals about consciousness</span></div>
     <div class="list-card"><span class="num">9.</span><span class="title">When the Impossible Happens</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Stanislav Grof, MD · his most readable book, written as personal stories rather than academic theory, covering fifty years of extraordinary research into LSD, Holotropic Breathwork, consciousness after death, and the full landscape of non-ordinary reality · the best entry point into his work</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Stanislav Grof, MD · his most readable book, written as personal stories rather than academic theory, covering fifty years of extraordinary research into LSD, Holotropic Breathwork, consciousness after death, and the full landscape of non-ordinary reality · the best entry point into his work</span></div>
     <div class="list-card"><span class="num">10.</span><span class="title">How Psychedelics Work: The Hidden Mind and Our Power to Heal</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Robin Carhart-Harris · brand new 2025 · the world's leading psychedelic neuroscientist's first book, covering the brain science, the research, and the future of the field</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Robin Carhart-Harris · brand new 2025 · the world's leading psychedelic neuroscientist's first book, covering the brain science, the research, and the future of the field</span></div>
   </div>
 </div>
 
@@ -245,27 +269,27 @@
   <div class="section-header">Books · Trauma & Healing</div>
   <div class="section-body">
     <div class="list-card"><span class="num">1.</span><span class="title">Healing the Helper: The Hidden Costs of Helping</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">LaTisha Carter · written directly for clinicians, healthcare workers, educators, caregivers, and anyone who carries everyone else · gives language, validation, and practical tools to the helpers who quietly burn out while showing up for the world</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">LaTisha Carter · written directly for clinicians, healthcare workers, educators, caregivers, and anyone who carries everyone else · gives language, validation, and practical tools to the helpers who quietly burn out while showing up for the world</span></div>
     <div class="list-card"><span class="num">2.</span><span class="title">The Myth of Normal</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Gabor Maté, MD · Maté's most comprehensive work, exploring how trauma and disconnection are at the root of most illness and what genuine healing actually requires</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Gabor Maté, MD · Maté's most comprehensive work, exploring how trauma and disconnection are at the root of most illness and what genuine healing actually requires</span></div>
     <div class="list-card"><span class="num">3.</span><span class="title">In the Realm of Hungry Ghosts</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Gabor Maté, MD · his most famous book, on addiction and the unmet childhood needs that drive compulsive behavior, written from years working with Vancouver's street-addicted population · one of the most compassionate books ever written on why people use and what healing actually requires</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Gabor Maté, MD · his most famous book, on addiction and the unmet childhood needs that drive compulsive behavior, written from years working with Vancouver's street-addicted population · one of the most compassionate books ever written on why people use and what healing actually requires</span></div>
     <div class="list-card"><span class="num">4.</span><span class="title">When the Body Says No</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Gabor Maté, MD · explores the connection between emotional repression and serious illness including cancer and autoimmune disease · predates The Myth of Normal and is more focused and equally powerful</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Gabor Maté, MD · explores the connection between emotional repression and serious illness including cancer and autoimmune disease · predates The Myth of Normal and is more focused and equally powerful</span></div>
     <div class="list-card"><span class="num">5.</span><span class="title">No Bad Parts</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Richard C. Schwartz, PhD · the foundational IFS book, accessible to everyone, reframes the inner critic and every difficult part of you as a protector with a story worth hearing</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Richard C. Schwartz, PhD · the foundational IFS book, accessible to everyone, reframes the inner critic and every difficult part of you as a protector with a story worth hearing</span></div>
     <div class="list-card"><span class="num">6.</span><span class="title">The Body Keeps the Score</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Bessel van der Kolk, MD · the defining book on trauma and the body, explaining why talk therapy alone is often not enough and what actually helps the nervous system heal</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Bessel van der Kolk, MD · the defining book on trauma and the body, explaining why talk therapy alone is often not enough and what actually helps the nervous system heal</span></div>
     <div class="list-card"><span class="num">7.</span><span class="title">The Biology of Trauma</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Amy Apigian, MD · a clinical and deeply practical look at how fear lives in the body and the specific protocols that help it complete and release</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Amy Apigian, MD · a clinical and deeply practical look at how fear lives in the body and the specific protocols that help it complete and release</span></div>
     <div class="list-card"><span class="num">8.</span><span class="title">Somatic Internal Family Systems Therapy</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Susan McConnell · weaves breath, movement, touch, and awareness into IFS work, essential reading for body-based practitioners</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Susan McConnell · weaves breath, movement, touch, and awareness into IFS work, essential reading for body-based practitioners</span></div>
     <div class="list-card"><span class="num">9.</span><span class="title">The Autoimmune Cure</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Sara Gottfried, MD · makes the case that unresolved trauma is the missing piece in most autoimmune illness, with a practical healing framework</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Sara Gottfried, MD · makes the case that unresolved trauma is the missing piece in most autoimmune illness, with a practical healing framework</span></div>
     <div class="list-card"><span class="num">10.</span><span class="title">Waking the Tiger</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Peter A. Levine, PhD · the book that introduced Somatic Experiencing to the world, translated into 22 languages, explaining how the body holds trauma and how physical sensation and movement can release it when talk therapy cannot · the foundational somatic trauma text</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Peter A. Levine, PhD · the book that introduced Somatic Experiencing to the world, translated into 22 languages, explaining how the body holds trauma and how physical sensation and movement can release it when talk therapy cannot · the foundational somatic trauma text</span></div>
     <div class="list-card"><span class="num">11.</span><span class="title">Into the Magic Shop</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">James Doty, MD · a neurosurgeon's memoir of the summer a stranger taught him to train his mind and open his heart, and how it changed the trajectory of his entire life</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">James Doty, MD · a neurosurgeon's memoir of the summer a stranger taught him to train his mind and open his heart, and how it changed the trajectory of his entire life</span></div>
   </div>
 </div>
 
@@ -274,13 +298,13 @@
   <div class="section-header">Articles Worth Reading</div>
   <div class="section-body">
     <div class="list-card"><span class="title">The CEOs Are Tripping</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">The New York Times · how a growing cottage industry of guided psilocybin retreats is attracting executives seeking breakthrough clarity and creativity</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">The New York Times · how a growing cottage industry of guided psilocybin retreats is attracting executives seeking breakthrough clarity and creativity</span></div>
     <div class="list-card"><span class="title">Life-Changing Psychedelics, for When Life Is Ending</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">The New York Times · people turning to psilocybin and ketamine for palliative and end-of-life care and what the research is showing about dying with less fear</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">The New York Times · people turning to psilocybin and ketamine for palliative and end-of-life care and what the research is showing about dying with less fear</span></div>
     <div class="list-card"><span class="title">Veterans Have Become Unlikely Lobbyists</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">The New York Times · combat veterans who found healing through psychedelics have become the movement's most powerful and credible voices for legalization</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">The New York Times · combat veterans who found healing through psychedelics have become the movement's most powerful and credible voices for legalization</span></div>
     <div class="list-card"><span class="title">Trial of Psilocybin versus Escitalopram for Depression</span>
-      <span style="font-weight:400;color:#666;font-size:11px;display:block;margin-top:3px;">Robin Carhart-Harris et al. · New England Journal of Medicine, 2021 · the landmark head-to-head study comparing psilocybin to an SSRI for depression · free to read online</span></div>
+      <span style="font-weight:400;color:#666;font-size:15px;display:block;margin-top:4px;">Robin Carhart-Harris et al. · New England Journal of Medicine, 2021 · the landmark head-to-head study comparing psilocybin to an SSRI for depression · free to read online</span></div>
   </div>
 </div>
 
@@ -387,7 +411,7 @@
       <div class="practice-item"><span class="title">Breathwork</span>Holotropic, Wim Hof, pranayama, and somatic breathing practices for regulation and expanded awareness</div>
       <div class="practice-item"><span class="title">Yoga</span>Mind-body practice combining movement, breath, and presence · one of the most consistent nervous system regulators available</div>
       <div class="practice-item"><span class="title">Meditation</span>Formal practice of training attention and awareness, building the capacity to be with what is without reactivity</div>
-      <div class="practice-item"><span class="title">Joe Dispenza</span>Meditations, workshops, and teachings on neuroplasticity and transformation · his guided meditations are particularly powerful for subconscious reprogramming</div>
+      <div class="practice-item"><span class="title">Joe Dispenza</span>Meditations, workshops, and teachings on neuroplasticity and transformation · his guided meditations are particularly powerful for subconscious reprogramming · <a href="https://drjoedispenza.com" style="color:var(--gold-dark);font-weight:600;">drjoedispenza.com</a></div>
     </div>
   </div>
 </div>
@@ -475,15 +499,21 @@
 </div>
 
 
+<div style="background:#434343;padding:28px 20px;margin:0;">
+  <div style="font-family:Montserrat,sans-serif;font-size:13px;font-weight:800;letter-spacing:0.25em;text-transform:uppercase;color:#F1DCAC;margin-bottom:14px;">A Note for Helpers</div>
+  <div style="font-family:Montserrat,sans-serif;font-size:15px;color:rgba(255,255,255,0.85);line-height:1.85;">You do not have to navigate this alone. These resources exist because helpers like you built them, and because helpers like you need them too. Reaching out is not weakness. It is the same courage you ask of the people you serve every day.</div>
+</div>
+
 <div class="disclaimer-box">
   <div class="disclaimer-title">Resource Guide Notice</div>
   <div class="disclaimer-text">
     As part of your experience with Healing the Helpers, you are receiving the Healing the Helpers Resource Guide. The Resource Guide is a general informational directory intended to help you identify resources that you may choose to explore. It is not an individualized medical referral, treatment recommendation, endorsement, guarantee, or representation that any listed person, organization, service, book, film, or other resource is a match for your specific needs or circumstances.<br><br>
+    Inclusion in the Resource Guide may reflect professional familiarity, publicly available information, or suggestions and feedback received from others. Unless a particular listing expressly states otherwise, Healing the Helpers has not independently verified and does not continuously monitor a listed person's or organization's licensure, credentials, insurance, disciplinary history, competence, availability, safety, or suitability for any particular person.<br><br>
+    Some listed individuals may be licensed health professionals. Others may provide unlicensed, nonclinical, spiritual, educational, peer-support, or wellness services. Inclusion in the Resource Guide does not mean that a listed person is licensed, insured, clinically qualified, or appropriate to diagnose or treat a medical or mental-health condition.<br><br>
     Listed practitioners, organizations, and resources are independent third parties. They are not employees, agents, representatives, contractors, or supervised providers of Healing the Helpers unless a particular listing expressly states otherwise. Healing the Helpers does not direct, supervise, or control the services provided by independent third parties and cannot guarantee their services, conduct, availability, competence, safety, or results.<br><br>
     No person or organization pays Healing the Helpers for inclusion in the Resource Guide. No referral fee, commission, reciprocal-referral obligation, or other financial consideration is associated with inclusion.<br><br>
     <strong style="color:var(--gold);">Crisis and Emergency Information</strong><br>
-    Healing the Helpers is not an emergency or crisis-response service. If you are experiencing suicidal thoughts, severe emotional distress, a mental-health crisis, or a substance-use crisis, call or text <strong>988</strong>. If there is immediate danger, a medical emergency, or an imminent risk of harm, call <strong>911</strong> or go to the nearest emergency department.<br><br>
-  </div>
+    Healing the Helpers is not an emergency or crisis-response service. If you are experiencing suicidal thoughts, severe emotional distress, a mental-health crisis, or a substance-use crisis, call or text <strong>988</strong>. If there is immediate danger, a medical emergency, or an imminent risk of harm, call <strong>911</strong> or go to the nearest emergency department.</div>
 </div>
 <div style="width:100%;height:6px;background:#434343;margin-top:0;"></div>
 <div style="text-align:center;padding:22px 10px 24px;background:#111111;">
